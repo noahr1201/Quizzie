@@ -70,19 +70,35 @@ section span:hover{
     
 }
 
+@media screen and (max-width:100vw){
+    
+    .container div{
+        width: 20vw;
+    }
+}
 
 
 
-@media(max-width:900px){
+
+@media screen and (max-width:900px){
     section span{
         
         width: calc(5vw - 2px);
         height: calc(5vw - 2px);
         
     }
+
+    .container{
+        flex-direction: column;
+        
+
+    }
+    .container div{
+        width: 63vw;
+    }
 }
 
-@media(max-width:600px){
+@media screen and (max-width:600px){
     section span{
         
         width: calc(5vw - 2px);
@@ -95,6 +111,7 @@ section span:hover{
     position: absolute;
     display: flex;
     gap: 20px;
+    top: 200px;
     
    
 }
@@ -102,11 +119,38 @@ section span:hover{
 
 
 .container div{
-    height: 50vh;
-    width: 20vw;
+    height: 400px;
+    
     background: rgb(45, 62, 45);
     border: #0f0 2px solid;
     z-index: 4;
     box-shadow: rgba(0, 255, 0, 0.494) 0px 0px 40px;
+    border-radius: 20px;
+}
+
+.container div p {
+    text-align: center;
+    top:14%;
+    transform: translate(-0%, -50%);
+    position: relative;
+    font-family: arcade;
+    font-size: 300%;
+    color: #0f0;
+    text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
+    text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
+}
+
+.container div button{
+    left: 50%;
+    top:56%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    height:50px ;
+    width: 10vw;
+    background: rgb(45, 62, 45);
+    border: #0f0 2px solid;
+    z-index: 4;
+    box-shadow: rgba(0, 255, 0, 0.494) 0px 0px 40px,inset rgba(0, 255, 0, 0.494) 0px 0px 40px;
+    
     border-radius: 20px;
 }

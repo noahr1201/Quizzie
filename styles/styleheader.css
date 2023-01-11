@@ -17,4 +17,16 @@
     top:50%;
     transform: translate(-0%, -50%);
     position: relative;
+    font-family: arcade;
+    font-size: 300%;
+    color: #0f0;
+    text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
+    text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
+    
 }
+
+@font-face {
+    font-family: arcade;
+    src: url(../fonts/ARCADE.TTF);
+
+  }
