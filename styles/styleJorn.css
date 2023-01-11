@@ -1,0 +1,26 @@
+.info{
+    background-color: black;
+    text-align: center;
+    margin-top: 250px;
+    background: rgb(45, 62, 45);
+    border: #0586ff 2px solid;
+    border-radius: 10px;
+    box-shadow: #2086e6 0px 0px 40px;
+}
+body{
+    color: white;
+    font-family: arial;
+}
+.header{
+    width: 64%;
+    height: 100px;
+    background: rgb(45, 62, 45);
+    border: #0f0 2px solid;
+    position: absolute;
+    z-index: 5;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    box-shadow: rgba(0, 255, 0, 0.494) 0px 0px 40px;
+}
