@@ -108,5 +108,5 @@ section span:hover{
     border: #0f0 2px solid;
     z-index: 4;
     box-shadow: rgba(0, 255, 0, 0.494) 0px 0px 40px;
-    border-radius: 50px;
+    border-radius: 20px;
 }

@@ -1,5 +1,5 @@
 .header{
-    width: 64%;
+    width: 63%;
     height: 100px;
     background: rgb(45, 62, 45);
     border: #0f0 2px solid;
@@ -8,6 +8,13 @@
     top: 40px;
     left: 50%;
     transform: translate(-50%);
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: rgba(0, 255, 0, 0.494) 0px 0px 40px;
+}
+
+.header p {
+    text-align: center;
+    top:50%;
+    transform: translate(-0%, -50%);
+    position: relative;
 }
