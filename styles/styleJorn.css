@@ -2,7 +2,7 @@
 body{
     color: white;
     font-family: verdana;
-    background-image: url("../media/subBG.png");
+    background-image: url("../media/Media-jorn/subBG.png");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -53,4 +53,15 @@ body{
     width: 50%;
     border-radius: 30px;
     box-shadow: black 0px 0px 10px;
+}
+.wave{
+    width: 75%;
+    border-radius: 30px;
+    box-shadow: black 0px 0px 10px;
+}
+.header p {
+    text-align: center;
+    top:50%;
+    transform: translate(-0%, -50%);
+    position: relative;
 }
