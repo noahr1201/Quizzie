@@ -1,19 +1,10 @@
-.info{
-    text-align: center;
-    background: #2d323e;
-    border: #0586ff 2px solid;
-    border-radius: 50px;
-    box-shadow: #2086e6 0px 0px 40px;
-    width: 20%;
-    position: absolute;
-    right: 40%;
-    top: 175px;
-}
+
 body{
     color: white;
     font-family: verdana;
-    background-image: url("../media/784283.jpeg");
+    background-image: url("../media/subBG.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 .header{
     width: 64%;
@@ -27,4 +18,39 @@ body{
     transform: translate(-50%);
     border-radius: 20px;
     box-shadow: #2086e6 0px 0px 40px;
+}
+.container .persoon{
+    height: 50vh;
+    width: 20vw;
+    background: #2d323e;
+    border: #0586ff 2px solid;
+    z-index: 4;
+    box-shadow: #2086e6 0px 0px 40px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.container .theme{
+    height: 50vh;
+    width: 40vw;
+    background: #2d323e;
+    border: #0586ff 2px solid;
+    z-index: 4;
+    box-shadow: #2086e6 0px 0px 40px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.container{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    top: 175px;
+    left: 18.5%;
+
+}
+.subimg{
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: black 0px 0px 10px;
 }
