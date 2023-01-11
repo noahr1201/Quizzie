@@ -89,3 +89,20 @@ body{
     src: url(../fonts/ARCADE.TTF);
 
   }
+  .quiz{
+    height: fit-content;
+    width: 40vw;
+    background: #2d323e;
+    border: #0586ff 2px solid;
+    z-index: 4;
+    box-shadow: #2086e6 0px 0px 40px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    top: 675px;
+    left: 50.2%;
+    width: 64%;
+    position: absolute;
+    z-index: 5;
+    transform: translate(-50%);
+  }
