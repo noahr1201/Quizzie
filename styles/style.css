@@ -142,7 +142,7 @@ section span:hover{
 
 .container div button{
     left: 50%;
-    top:56%;
+    top:60%;
     transform: translate(-50%, -50%);
     position: relative;
     height:50px ;
@@ -153,4 +153,54 @@ section span:hover{
     box-shadow: rgba(0, 255, 0, 0.494) 0px 0px 40px,inset rgba(0, 255, 0, 0.494) 0px 0px 40px;
     
     border-radius: 20px;
+    transition: all ease 1s;
 }
+
+.container div button:hover{
+    height:60px ;
+    width: 15vw;
+    
+    
+}
+
+.container div button p {
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: arcade;
+    font-size: 300%;
+    color: #0f0;
+    text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
+    text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
+    transition: all ease 0.5s;
+    
+   
+    
+    
+}
+
+.container div button:hover{
+    
+    animation: animatebutton 2.5s linear infinite;
+    
+}
+@keyframes animatebutton
+{
+    0%{
+        font-size: 150%;
+    }
+
+    50%{
+        font-size: 50%;
+    }
+    100%{
+        font-size: 150%;
+    }
+}
+
+
+
+
+
+
