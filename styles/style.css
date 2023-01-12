@@ -74,6 +74,12 @@ section span:hover{
     
     .container div{
         width: 20vw;
+        
+    }
+
+    .container div button{
+        height:50px ;
+        width: 150px;
     }
 }
 
@@ -95,6 +101,10 @@ section span:hover{
     }
     .container div{
         width: 63vw;
+    }
+    .container div button{
+        height:100px ;
+        width: 300px;
     }
 }
 
@@ -145,8 +155,6 @@ section span:hover{
     top:60%;
     transform: translate(-50%, -50%);
     position: relative;
-    height:50px ;
-    width: 10vw;
     background: rgb(45, 62, 45);
     border: #0f0 2px solid;
     z-index: 4;
@@ -158,7 +166,7 @@ section span:hover{
 
 .container div button:hover{
     height:60px ;
-    width: 15vw;
+    width: 160px;
     
     
 }
