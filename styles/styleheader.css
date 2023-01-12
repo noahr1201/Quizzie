@@ -13,16 +13,25 @@
 }
 
 .header p {
-    text-align: center;
+    left: 50%;
     top:50%;
-    transform: translate(-0%, -50%);
-    position: relative;
+    transform: translate(-50%, -50%);
+    position: absolute;
     font-family: arcade;
     font-size: 300%;
     color: #0f0;
     text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
     text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
+    transition: font-size ease 0.5s;
     
+}
+
+.header p:hover{
+    font-size: 400%;
+}
+
+.header a{
+    text-decoration: none;
 }
 
 @font-face {
