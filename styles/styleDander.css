@@ -123,8 +123,8 @@ section span:hover{
 
 
 .klijnvak{
-    height: 50px;
-    width: 25%;
+    height: 75px;
+    width: 100%;
     background: rgb(45, 62, 45);
     border: #0f0 2px solid;
     z-index: 4;
@@ -132,15 +132,28 @@ section span:hover{
     border-radius: 20px;
     left: 50%;
     
-    transform: translate(-100%, -0%);
+    transform: translate(-50%, -0%);
     position: relative;
 
     transition: height ease 0.5s;
+    float: left;
     
 }
+.andwoorden{
+    height: 200px;
+    width: calc(31.5% - 10px);
+    z-index: 4;
+    gap: 20px;
+    left: 50%;
+    transform: translate(-102%, -0%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .klijnvak:hover{
-    height: 75px;
+    height: 100px;
     box-shadow: rgb(0, 255, 0) 0px 0px 80px;
 }
 
