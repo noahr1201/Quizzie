@@ -111,8 +111,8 @@ section span:hover{
 @media screen and (max-width:600px){
     section span{
         
-        width: calc(5vw - 2px);
-        height: calc(5vw - 2px);
+        width: calc(7vw - 2px);
+        height: calc(7vw - 2px);
         
     }
 }
