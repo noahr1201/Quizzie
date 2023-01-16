@@ -166,6 +166,22 @@ section span:hover{
     height: 100px;
     box-shadow: rgb(0, 255, 0) 0px 0px 80px;
 }
+.knop{
+    height: 75px;
+    width: 100%;
+    opacity: 0;
+    z-index: 4;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    position: relative;
+    transition: height ease 0.5s;
+    float: left;
+}
+
+.knop:hover{
+    height: 100px;
+}
 
 .andwoorden{
     height: 200px;
@@ -205,7 +221,7 @@ section span:hover{
     color: #0f0;
     text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
     text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
-    animation:  blink-caret .8s step-end infinite;
+    animation:  blink-caret 1s step-end infinite;
     border-right: 8px solid #0f0;
     margin: auto;
     white-space: nowrap; 
