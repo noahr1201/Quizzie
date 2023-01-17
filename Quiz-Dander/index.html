@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles/styleheader.css">
     <script src="script.js"></script>
 </head>
-<body onload="vraag1()" >
+<body onload="vraag1();vraagdeeleen()" >
     <div class="header">
        <a href="../index.html"><p>Quizzie</p></a> 
     </div>
@@ -23,27 +23,31 @@
             
             <div class="andwoorden"> 
                 <div class="klijnvak">
-                    <button class="knop" onclick="next();writeagain();" >weg</button>
+                    <button class="knop" id="knop1" onclick="anwoord1();next(); writeagain2(); correct1();" >weg</button>
                     <img class="pacman" src="../media/media-Dander/icons8-pacman-100.png" alt="">
                     <img class="ghost" src="../media/media-Dander/665190-200.png" alt="">
+                    <p class="vraag" id="nummer1"></p>
                 </div>
                 <div class="klijnvak">
-                    <button class="knop" onclick="next();writeagain();">weg</button>
+                    <button class="knop" id="knop2"  onclick="anwoord2();next();writeagain2(); correct1();">weg</button>
                     <img class="pacman" src="../media/media-Dander/icons8-pacman-100.png" alt="">
                     <img class="ghost" src="../media/media-Dander/665190-200.png" alt="">
+                    <p class="vraag" id="nummer2">1999</p>
                 </div>
             </div>
 
             <div class="andwoorden" > 
                 <div class="klijnvak">
-                    <button class="knop" onclick="next();writeagain();">weg</button>
+                    <button class="knop" id="knop3"  onclick="anwoord3();next();writeagain2(); correct1();">weg</button>
                     <img class="pacman2" src="../media/media-Dander/icons8-pacman-100.png" alt="">
                     <img class="ghost2" src="../media/media-Dander/665190-200.png" alt="">
+                    <p class="vraag" id="nummer3">1999</p>
                 </div>
                 <div class="klijnvak">
-                    <button class="knop" onclick="next();writeagain();">weg</button>
+                    <button class="knop" id="knop4"  onclick="anwoord4();next();writeagain2(); correct1();">weg</button>
                     <img class="pacman2"src="../media/media-Dander/icons8-pacman-100.png" alt="">
                     <img class="ghost2" src="../media/media-Dander/665190-200.png" alt="">
+                    <p class="vraag" id="nummer4">1999</p>
                 </div>
         </div>
            
