@@ -14,6 +14,15 @@ console.log(awnser);
 
 
 
+function onClick(num){
+  // anwoord4();
+  awnser = num;
+  next();
+  writeagain2(); 
+  correct1();
+}
+
+
 
 function vraag1() {
   timeout = setTimeout(typeWriter, 2000);
@@ -40,10 +49,10 @@ function writeagain(){
 }
 
 function vraagdeeleen(){
-  document.getElementById("nummer1").innerHTML = "..."; 
-    document.getElementById("nummer2").innerHTML = "...";
-    document.getElementById("nummer3").innerHTML = "...";
-    document.getElementById("nummer4").innerHTML = "...";
+  document.getElementById("nummer1").innerHTML = "+"; 
+    document.getElementById("nummer2").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "-";
+    document.getElementById("nummer4").innerHTML = "-";
     txt="welk jaar is pacman gemaakt"; 
 }
 
@@ -51,39 +60,43 @@ function vraagdeeleen(){
 
 function next(){
   quistion++;
+  console.log(quistion);
   if (quistion==1){
     txt="wie heeft pacman gemaakt"; 
-    document.getElementById("nummer1").innerHTML = "jan"; 
-    document.getElementById("nummer2").innerHTML = "henk";
-    document.getElementById("nummer3").innerHTML = "piet";
-    document.getElementById("nummer4").innerHTML = "binchilling";
+    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer2").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "+";
+    document.getElementById("nummer4").innerHTML = "-";
   }
 
   if (quistion==2){
     txt="hoe is pacman gemaakt";
-    document.getElementById("nummer1").innerHTML = "animatie"; 
-    document.getElementById("nummer2").innerHTML = "carton";
-    document.getElementById("nummer3").innerHTML = "unreal";
-    document.getElementById("nummer4").innerHTML = "unity";
+    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer2").innerHTML = "+";
+    document.getElementById("nummer3").innerHTML = "-";
+    document.getElementById("nummer4").innerHTML = "-";
   }
 
   if (quistion==3){
     txt="is er een pacman serie";
-    document.getElementById("nummer1").innerHTML = "ja"; 
-    document.getElementById("nummer2").innerHTML = "nee";
-    document.getElementById("nummer3").innerHTML = "mischien";
-    document.getElementById("nummer4").innerHTML = "PFFFF";
+    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer2").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "-";
+    document.getElementById("nummer4").innerHTML = "+";
   }
 
   if (quistion==4){
-    txt="je moeder";
-    document.getElementById("nummer1").innerHTML = "jan"; 
-    document.getElementById("nummer2").innerHTML = "henk";
-    document.getElementById("nummer3").innerHTML = "piet";
-    document.getElementById("nummer4").innerHTML = "binchilling";
+    txt="de quiz is klaar";
+    document.getElementById("nummer1").innerHTML = "..."; 
+    document.getElementById("nummer2").innerHTML = "...";
+    document.getElementById("nummer3").innerHTML = "...";
+    document.getElementById("nummer4").innerHTML = "...";
   }
 
 }
+
+
+
 
 function correct1(){
   if (quistion==1&& awnser == 1){
@@ -100,10 +113,10 @@ function correct1(){
     console.log("correct");
   }else if (quistion==4&& awnser == 4){
     totaal++;
-    console.log(totaal);
     console.log("correct");
+    document.getElementById("textheader").innerHTML = "je hebt "+totaal+" punten"
   }else if (quistion>=4){
-    console.log(totaal);
+    document.getElementById("textheader").innerHTML = "je hebt "+totaal+" punten"
   }else{
     console.log("incorrect");
   }
@@ -112,23 +125,23 @@ function correct1(){
 }
 
 
-function anwoord1()
-{
-  awnser =1;
-}
+// function anwoord1()
+// {
+//   awnser =1;
+// }
 
-function anwoord2()
-{
-  awnser =2;
-}
+// function anwoord2()
+// {
+//   awnser =2;
+// }
 
-function anwoord3()
-{
-  awnser =3;
-}
+// function anwoord3()
+// {
+//   awnser =3;
+// }
 
-function anwoord4()
-{
-  awnser =4;
-}
+// function anwoord4()
+// {
+//   awnser =4;
+// }
 
