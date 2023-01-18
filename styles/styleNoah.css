@@ -1,0 +1,21 @@
+body{
+    color: white;
+    font-family: verdana;
+    background-image: url("../media/media-Noah/bg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    width: 64%;
+    height: 50px;
+    background: #2d323e;
+    border: #0586ff 2px solid;
+    position: absolute;
+    z-index: 5;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    box-shadow: #2086e6 0px 0px 40px;
+}
