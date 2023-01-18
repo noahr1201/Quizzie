@@ -10,12 +10,31 @@ body{
     width: 64%;
     height: 50px;
     background: #2d323e;
-    border: #0586ff 2px solid;
+    border: #ff3305 2px solid;
     position: absolute;
     z-index: 5;
     top: 40px;
     left: 50%;
     transform: translate(-50%);
     border-radius: 20px;
-    box-shadow: #2086e6 0px 0px 40px;
+    box-shadow: #f33500 0px 0px 40px;
+}
+.container{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    top: 175px;
+    left: 18.5%;
+
+}
+.container .theme{
+    height: fit-content;
+    width: 30vw;
+    background: #2d323e;
+    border: #ff0505 2px solid;
+    z-index: 4;
+    box-shadow: #0a9523 0px 0px 40px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
 }
