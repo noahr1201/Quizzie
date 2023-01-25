@@ -1,0 +1,5 @@
+let vraag1 = document.getElementsByName("vraag1")
+let vraag2 = document.getElementsByName("vraag2")
+let vraag3 = document.getElementsByName("vraag3")
+let vraag4 = document.getElementsByName("vraag4")
+let vraag5 = document.getElementsByName("vraag5")
