@@ -10,12 +10,13 @@ function antwoord(){
     vraag8 = document.getElementById("vraag8").value;
     vraag9 = document.getElementById("vraag9").value;
     vraag10 = document.getElementById("vraag10").value;
+    naam = document.getElementById("name").value;
 
     if (vraag1 == "Watermeloen" || vraag1 == "watermeloen" || vraag2 == "21 april 2010" || vraag2 == "21 April 2010" || vraag3 == "Halfbrick" || vraag3 == "halfbrick" || vraag4 == "Ja" || vraag4 == "ja" || vraag5 == "Ja" || vraag5 == "ja" || vraag6 == "15" || vraag6 == "vijftien" || vraag7 == "Ja" || vraag7 == "ja" || vraag8 == "Ja" || vraag8 == "ja" || vraag9 == "Arcade" || vraag9 == "arcade" || vraag10 == "200.000" || vraag10 == "200000"){
-        alert("Je hebt het goed!");
+        alert("Je hebt het goed!" + " " + naam);
     }else{
-        alert("Je hebt een of meerdere fouten!");
-        alert("Wil je de antwoorden zien? Druk dan op 'Zie antwoorden'")
+        alert("Je hebt een of meerdere fouten!" + " " + naam);
+        alert("Wil je de antwoorden zien? Druk dan op 'Zie antwoorden'" + " " + naam);
     }
 }
 
