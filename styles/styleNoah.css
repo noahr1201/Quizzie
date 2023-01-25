@@ -28,6 +28,9 @@ body{
 
 }
 .container .theme{
+    position: absolute;
+    left: 103%;
+    top: 86%;
     height: fit-content;
     width: 30vw;
     background: #2d323e;
@@ -59,8 +62,8 @@ body{
 
 .container .themer2{
     position: absolute;
-    top: 57%;
-    left: 50%;
+    top: 0%;
+    left: 102%;
     height: fit-content;
     width: 31vw;
     background: #2d323e;
