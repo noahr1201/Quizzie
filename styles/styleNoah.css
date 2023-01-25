@@ -30,7 +30,7 @@ body{
 .container .theme{
     position: absolute;
     left: 103%;
-    top: 93%;
+    top: 89%;
     height: fit-content;
     width: 30vw;
     background: #2d323e;
@@ -105,5 +105,22 @@ body{
     transition: transform .2s;
 }
 
+#punten{
+    font-family: arcade;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
 
+#resultaat{
+    font-family: arcade;
+    position: absolute;
+    left: 20%;
+    top: 36%;
+}
+
+@font-face {
+    font-family: arcade;
+    src: url(../fonts/ARCADE.TTF);
+}
 
