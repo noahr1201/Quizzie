@@ -90,10 +90,11 @@ body{
     width: 9%;
     float: left;
 }
-input[type=submit]{
+button{
     width: 500px;
     border-radius: 15px;
     border: #c20000 1px solid;
     background-color: #3c0101;
     color: white;
+    height: 25px;
 }
