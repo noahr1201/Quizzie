@@ -106,6 +106,7 @@ body{
 }
 
 #punten{
+    font-size: 35px;
     font-family: arcade;
     position: absolute;
     left: 10%;
@@ -113,6 +114,7 @@ body{
 }
 
 #resultaat{
+    font-size: 35px;
     font-family: arcade;
     position: absolute;
     left: 20%;

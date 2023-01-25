@@ -43,7 +43,20 @@
     text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
     transition: font-size ease 0.2s ;
     white-space: nowrap; 
-    
+}
+
+.header a {
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: arcade;
+    font-size: 300%;
+    color: #0f0;
+    text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
+    text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
+    transition: font-size ease 0.2s ;
+    white-space: nowrap; 
 }
 
 .headernoah p {
@@ -59,6 +72,20 @@
     transition: font-size ease 0.2s ;
     white-space: nowrap; 
     
+}
+
+.headernoah a {
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: arcade;
+    font-size: 300%;
+    color: rgb(255, 0, 0);
+    text-shadow: rgba(255, 0, 0, 0.737) 2px 0px 10px;
+    text-shadow: 0 0 10em rgb(255, 0, 0), 0 0 0.5em rgb(255, 0, 0);
+    transition: font-size ease 0.2s ;
+    white-space: nowrap; 
 }
 
 @keyframes animate
