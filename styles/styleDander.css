@@ -61,7 +61,6 @@ section span{
 section span:hover{
     background-color: #0f0;
     transition: background-color 0s , scale 0.5s;
-    scale: 1.2;
     z-index: 3;
     box-shadow: #0f0 0px 0px 40px;
     
@@ -221,19 +220,14 @@ section span:hover{
     color: #0f0;
     text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
     text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
-    animation:  blink-caret 1s step-end infinite;
-    border-right: 8px solid #0f0;
     margin: auto;
     white-space: nowrap; 
+    
     
 
    
 }
-         
-      @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: rgb(210, 210, 210) }
-      }
+    
 
 .pacman{
     height: 50px;
