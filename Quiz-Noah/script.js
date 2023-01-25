@@ -15,5 +15,5 @@ function antwoord(){
 }
 
 function zieantwoord(){
-    alert("Vraag 1: Watermeloen, Vraag 2: 21 april 2010, Vraag 3: Halfbrick, Vraag 4: Ja, Vraag 5: Ja");
+    alert(" Vraag 1: Watermeloen \n Vraag 2: 21 april 2010 \n Vraag 3: Halfbrick \n Vraag 4: Ja \n Vraag 5: Ja");
 }

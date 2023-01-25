@@ -41,7 +41,7 @@ body{
 
 .container .themer{
     height: fit-content;
-    width: 31vw;
+    width: 35vw;
     background: #2d323e;
     border: #ff0505 2px solid;
     z-index: 4;
@@ -49,6 +49,12 @@ body{
     border-radius: 20px;
     text-align: center;
     padding: 10px;
+}
+
+.container .themer > ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .container .themer2{
