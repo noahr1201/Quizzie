@@ -162,7 +162,7 @@ section span:hover{
 }
 
 .klijnvak:hover{
-    height: 100px;
+    
     box-shadow: rgb(0, 255, 0) 0px 0px 80px;
 }
 .knop{
@@ -178,9 +178,7 @@ section span:hover{
     float: left;
 }
 
-.knop:hover{
-    height: 100px;
-}
+
 
 .andwoorden{
     height: 200px;
@@ -276,6 +274,7 @@ section span:hover{
     text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
     text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
     transition: font-size ease 0.2s ;
+    white-space: nowrap;
 }
 
 

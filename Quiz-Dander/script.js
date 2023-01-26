@@ -56,7 +56,7 @@ function writeagain(){
 }
 
 function vraagdeeleen(){
-  document.getElementById("nummer1").innerHTML = "+"; 
+  document.getElementById("nummer1").innerHTML = "1980"; 
     document.getElementById("nummer2").innerHTML = "-";
     document.getElementById("nummer3").innerHTML = "-";
     document.getElementById("nummer4").innerHTML = "-";
@@ -72,27 +72,83 @@ function next(){
     txt="wie heeft pacman gemaakt"; 
     document.getElementById("nummer1").innerHTML = "-"; 
     document.getElementById("nummer2").innerHTML = "-";
-    document.getElementById("nummer3").innerHTML = "+";
+    document.getElementById("nummer3").innerHTML = "Tōru Iwatani";
     document.getElementById("nummer4").innerHTML = "-";
   }
 
   if (quistion==2){
-    txt="hoe is pacman gemaakt";
+    txt="hoe idee van is pacman gemaakt";
     document.getElementById("nummer1").innerHTML = "-"; 
-    document.getElementById("nummer2").innerHTML = "+";
+    document.getElementById("nummer2").innerHTML = "pizza";
     document.getElementById("nummer3").innerHTML = "-";
     document.getElementById("nummer4").innerHTML = "-";
   }
 
   if (quistion==3){
-    txt="is er een pacman serie";
+    txt="wat is de hoogste level in pac man";
+    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer2").innerHTML = "255";
+    document.getElementById("nummer3").innerHTML = "";
+    document.getElementById("nummer4").innerHTML = "-";
+  }
+  
+  if (quistion==4){
+    txt="waar op werd de eerste geme uit gebracht";
     document.getElementById("nummer1").innerHTML = "-"; 
     document.getElementById("nummer2").innerHTML = "-";
-    document.getElementById("nummer3").innerHTML = "-";
-    document.getElementById("nummer4").innerHTML = "+";
+    document.getElementById("nummer3").innerHTML = "";
+    document.getElementById("nummer4").innerHTML = "arcade kast";
   }
 
-  if (quistion==4){
+  if (quistion==5){
+    txt="hoe veel afleveringen heeft de pac man serie";
+    document.getElementById("nummer1").innerHTML = "52"; 
+    document.getElementById("nummer2").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "";
+    document.getElementById("nummer4").innerHTML = "-";
+  }
+
+  if (quistion==6){
+    txt="wat was de orginele naam van pac man";
+    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer2").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "";
+    document.getElementById("nummer4").innerHTML = "Puck-Man";
+  }
+
+  if (quistion==7){
+    txt="welk fruit eet pac man";
+    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer2").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "kers";
+    document.getElementById("nummer4").innerHTML = "-";
+  }
+
+  if (quistion==8){
+    txt="hoe veel spoken zitten in het spel";
+    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer2").innerHTML = "4";
+    document.getElementById("nummer3").innerHTML = "";
+    document.getElementById("nummer4").innerHTML = "-";
+  }
+
+  if (quistion==9){
+    txt="welk land is pac man gemaakt";
+    document.getElementById("nummer1").innerHTML = "japan"; 
+    document.getElementById("nummer2").innerHTML = "";
+    document.getElementById("nummer3").innerHTML = "";
+    document.getElementById("nummer4").innerHTML = "-";
+  }
+
+  if (quistion==10){
+    txt="hoe veel pac man games zijn er in totaal";
+    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer2").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "6";
+    document.getElementById("nummer4").innerHTML = "-";
+  }
+
+  if (quistion==11){
     txt="de quiz is klaar";
     document.getElementById("nummer1").innerHTML = "info"; 
     document.getElementById("nummer2").innerHTML = "info";
@@ -100,7 +156,7 @@ function next(){
     document.getElementById("nummer4").innerHTML = "info";
   }
 
-  if (quistion==5){
+  if (quistion==12){
     document.getElementById("vraagtext").style.fontSize = "3vw";
     txt="nu kan je lezen over de guiz en de maker";
     document.getElementById("nummer1").innerHTML = "next"; 
@@ -109,7 +165,7 @@ function next(){
     document.getElementById("nummer4").innerHTML = "next";
   }
 
-  if (quistion==6){
+  if (quistion==13){
     document.getElementById("vraagtext").style.fontSize = "3vw";
     txt="deze quiz is gemaakt door Dander Siegers uit klas D1B";
     document.getElementById("nummer1").innerHTML = "next"; 
@@ -118,7 +174,7 @@ function next(){
     document.getElementById("nummer4").innerHTML = "next";
   }
 
-  if (quistion==7){
+  if (quistion==14){
     document.getElementById("vraagtext").style.fontSize = "3vw";
     txt="de quiz ging over pacman. pacman is een oude game uit de jaren 80. In het spel moet je allen snoepjes eten terwijl je de spokjes moet ontwijken. ";
     document.getElementById("nummer1").innerHTML = "next"; 
@@ -127,7 +183,7 @@ function next(){
     document.getElementById("nummer4").innerHTML = "next";
   }
 
-  if (quistion==8){
+  if (quistion==15){
     document.getElementById("textheader").innerHTML = "home"
     txt="klaar";
     document.getElementById("nummer1").innerHTML = "..."; 
@@ -163,11 +219,39 @@ function correct1(){
     totaal++;
     console.log(totaal);
     console.log("correct");
-  }else if (quistion==4&& awnser == 4){
+  }else if (quistion==4&& awnser == 2){
+    totaal++;
+    console.log(totaal);
+    console.log("correct");
+  }else if (quistion==5&& awnser == 4){
+    totaal++;
+    console.log(totaal);
+    console.log("correct");
+  }else if (quistion==6&& awnser == 1){
+    totaal++;
+    console.log(totaal);
+    console.log("correct");
+  }else if (quistion==7&& awnser == 4){
+    totaal++;
+    console.log(totaal);
+    console.log("correct");
+  }else if (quistion==8&& awnser == 3){
+    totaal++;
+    console.log(totaal);
+    console.log("correct");
+  }else if (quistion==9&& awnser == 2){
+    totaal++;
+    console.log(totaal);
+    console.log("correct");
+  }else if (quistion==10&& awnser == 1){
+    totaal++;
+    console.log(totaal);
+    console.log("correct");
+  }else if (quistion==11&& awnser == 3){
     totaal++;
     console.log("correct");
     document.getElementById("textheader").innerHTML = "je hebt "+totaal+" punten"
-  }else if (quistion==4){
+  }else if (quistion==11){
     document.getElementById("textheader").innerHTML = "je hebt "+totaal+" punten"
   }else{
     console.log("incorrect");
