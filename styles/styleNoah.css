@@ -28,6 +28,9 @@ body{
 
 }
 .container .theme{
+    position: absolute;
+    left: 103%;
+    top: 89%;
     height: fit-content;
     width: 30vw;
     background: #2d323e;
@@ -41,7 +44,7 @@ body{
 
 .container .themer{
     height: fit-content;
-    width: 31vw;
+    width: 35vw;
     background: #2d323e;
     border: #ff0505 2px solid;
     z-index: 4;
@@ -51,10 +54,16 @@ body{
     padding: 10px;
 }
 
+.container .themer > ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .container .themer2{
     position: absolute;
-    top: 57%;
-    left: 50%;
+    top: 0%;
+    left: 102%;
     height: fit-content;
     width: 31vw;
     background: #2d323e;
@@ -96,5 +105,24 @@ body{
     transition: transform .2s;
 }
 
+#punten{
+    font-size: 35px;
+    font-family: arcade;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
 
+#resultaat{
+    font-size: 35px;
+    font-family: arcade;
+    position: absolute;
+    left: 20%;
+    top: 36%;
+}
+
+@font-face {
+    font-family: arcade;
+    src: url(../fonts/ARCADE.TTF);
+}
 

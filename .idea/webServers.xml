@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a27f1849-76eb-49dc-b32b-082fe7c961b5" name="FTP School">
+        <fileTransfer rootFolder="/httpdocs" accessType="SFTP" host="89526.stu.sd-lab.nl" port="22" sshConfigId="f9412178-9073-4030-935b-b9325cec3818" sshConfig="ftp89526@89526.stu.sd-lab.nl:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

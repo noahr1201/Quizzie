@@ -11,7 +11,9 @@
 </head>
 <body>
     <div class="headernoah">       
-        <p>Quizzie</p>
+        <a href="../index.html">Quizzie</a>
+        <h2 id="punten">Punten:</h2>
+        <div id="resultaat"></div>
    </div>
    <div class="info">
     <div class="container">
@@ -25,18 +27,37 @@
         <div class="themer">
             <h1>Vragen</h1>
             <br>
+            <p>Voor elke juiste vraag krijg je 1 punt</p>
+            <br>
             <ol>
-            <li>Welke fruit is het meest gebruikt in de game?</li>
-            <li>Wanneer kwam het spel uit?</li>
-            <li>Wie heeft het spel gemaakt?</li>
-            <li>Kan je het spel online spelen?</li>
-            <li>Kan je ook multiplayer spelen?</li>
+            <li>Vraag 1 <br> Welke fruit is het meest gebruikt in de game? <br> Watermeloen of Appel of Citroen?</li>
+            <br>
+            <li>Vraag 2 <br> Wanneer kwam het spel uit? <br> 21 april 2010 of 13 februari 2015 of 12 januari 2006</li>
+            <br>
+            <li>Vraag 3 <br> Wie heeft het spel gemaakt? <br> Halfbrick of Unreal of Steam?</li>
+            <br>
+            <li>Vraag 4 <br> Kan je het spel online (op het internet) spelen? <br> Ja of Nee of Weet niet?</li>
+            <br>
+            <li>Vraag 5 <br> Kan je ook multiplayer spelen? <br> Ja of Nee of Weet niet?</li>
+            <br>
+            <li>Vraag 6 <br> Hoeveel fruitsoorten zijn er? <br> 10 of 15 of 20?</li>
+            <br>
+            <li>Vraag 7 <br> Is het spel gratis? <br> Ja of Nee of Weet niet?</li>
+            <br>
+            <li>Vraag 8 <br> Is het een leuk spel? <br> Ja of Ja of Ja?</li>
+            <br>
+            <li>Vraag 9 <br> Welke genre is het spel? <br> Fictie of Arcade of Puzzel?</li>
+            <br>
+            <li>Vraag 10 <br> Hoevaak is het spel gedownload in de eerste maand? <br> 100.000 of 200.000 of 300.000?</li>
             </ol>
             <br>
         </div>
         <div class="themer2">
             <h1>Antwoorden</h1>
             <br>
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" placeholder="Naam">
+            <br><br>
             <label for="vraag1">Vraag 1:</label>
             <input type="text" id="vraag1" name="vraag1" placeholder="Antwoord">
             <br><br>
@@ -52,9 +73,26 @@
             <label for="vraag5">Vraag 5:</label>
             <input type="text" id="vraag5" name="vraag5" placeholder="Antwoord">
             <br></br>
+            <label for="vraag6">Vraag 6:</label>
+            <input type="text" id="vraag6" name="vraag6" placeholder="Antwoord">
+            <br><br>
+            <label for="vraag7">Vraag 7:</label>
+            <input type="text" id="vraag7" name="vraag7" placeholder="Antwoord">
+            <br><br>
+            <label for="vraag8">Vraag 8:</label>
+            <input type="text" id="vraag8" name="vraag8" placeholder="Antwoord">
+            <br><br>
+            <label for="vraag9">Vraag 9:</label>
+            <input type="text" id="vraag9" name="vraag9" placeholder="Antwoord">
+            <br><br>
+            <label for="vraag10">Vraag 10:</label>
+            <input type="text" id="vraag10" name="vraag10" placeholder="Antwoord">
+            <br><br>
             <button onclick="antwoord()" type="submit">Submit</button>
             <br><br>
             <button onclick="zieantwoord()" type="submit">Zie antwoorden</button>
         </div>
+    </div>
+    </div>
 </body>
 </html>
