@@ -34,8 +34,12 @@ function typeWriter() {
     if (i == 40 || i == 80 || i==120) {
       document.getElementById("vraagtext").innerHTML += ',<br/>';
     }
-    let audio = new Audio('../media/media-Dander/gameboy-pluck-41265.mp3');
+   
+
+if(i % 2 == 0) { let audio = new Audio('../media/media-Dander/gameboy-pluck-41265.mp3');
 audio.play();
+  
+}
 
     document.getElementById("vraagtext").innerHTML += txt.charAt(i);
     i++;
@@ -58,10 +62,11 @@ function writeagain(){
 
 function vraagdeeleen(){
   document.getElementById("nummer1").innerHTML = "1980"; 
-    document.getElementById("nummer2").innerHTML = "-";
-    document.getElementById("nummer3").innerHTML = "-";
-    document.getElementById("nummer4").innerHTML = "-";
+    document.getElementById("nummer2").innerHTML = "1990";
+    document.getElementById("nummer3").innerHTML = "1975";
+    document.getElementById("nummer4").innerHTML = "2010";
     txt="welk jaar is pacman gemaakt"; 
+    //wanser=1980
 }
 
 
@@ -71,87 +76,97 @@ function next(){
   console.log(quistion);
   if (quistion==1){
     txt="wie heeft pacman gemaakt"; 
-    document.getElementById("nummer1").innerHTML = "-"; 
-    document.getElementById("nummer2").innerHTML = "-";
-    document.getElementById("nummer3").innerHTML = "Tōru Iwatani";
-    document.getElementById("nummer4").innerHTML = "-";
+    document.getElementById("nummer1").innerHTML = "Kichiro"; 
+    document.getElementById("nummer2").innerHTML = "Yoshiro";
+    document.getElementById("nummer3").innerHTML = "Tōru";
+    document.getElementById("nummer4").innerHTML = "Takuya";
+    //wanser=Toru
   }
 
   if (quistion==2){
     txt="hoe idee van is pacman gemaakt";
-    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer1").innerHTML = "taart diagram"; 
     document.getElementById("nummer2").innerHTML = "pizza";
-    document.getElementById("nummer3").innerHTML = "-";
-    document.getElementById("nummer4").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "gele M&M";
+    document.getElementById("nummer4").innerHTML = "voedbal";
+    //wanser=pizza
   }
 
   if (quistion==3){
     txt="wat het wereld recoor in pac man";
-    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer1").innerHTML = "492"; 
     document.getElementById("nummer2").innerHTML = "255";
-    document.getElementById("nummer3").innerHTML = "";
-    document.getElementById("nummer4").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "364";
+    document.getElementById("nummer4").innerHTML = "729";
+    //wanser=255
   }
   
   if (quistion==4){
     txt="wat was de eerste game release";
-    document.getElementById("nummer1").innerHTML = "-"; 
-    document.getElementById("nummer2").innerHTML = "-";
-    document.getElementById("nummer3").innerHTML = "";
+    document.getElementById("nummer1").innerHTML = "Xbox"; 
+    document.getElementById("nummer2").innerHTML = "bord spel";
+    document.getElementById("nummer3").innerHTML = "game boy";
     document.getElementById("nummer4").innerHTML = "arcade kast";
+    //wanser=arcade kast
   }
 
   if (quistion==5){
     textklijn2();
     txt="hoe veel afleveringen heeft de pac man serie";
     document.getElementById("nummer1").innerHTML = "52"; 
-    document.getElementById("nummer2").innerHTML = "-";
-    document.getElementById("nummer3").innerHTML = "";
-    document.getElementById("nummer4").innerHTML = "-";
+    document.getElementById("nummer2").innerHTML = "12";
+    document.getElementById("nummer3").innerHTML = "37";
+    document.getElementById("nummer4").innerHTML = "61";
+    //wanser=52
   }
 
   if (quistion==6){
     txt="wat was de orginele naam van pac man";
-    document.getElementById("nummer1").innerHTML = "-"; 
-    document.getElementById("nummer2").innerHTML = "-";
-    document.getElementById("nummer3").innerHTML = "";
+    document.getElementById("nummer1").innerHTML = "paku-manu"; 
+    document.getElementById("nummer2").innerHTML = "pac-man";
+    document.getElementById("nummer3").innerHTML = "pach-mon";
     document.getElementById("nummer4").innerHTML = "Puck-Man";
+    //wanser=puckman
   }
 
   if (quistion==7){
     txt="welk fruit eet pac man";
-    document.getElementById("nummer1").innerHTML = "-"; 
-    document.getElementById("nummer2").innerHTML = "-";
+    document.getElementById("nummer1").innerHTML = "perzik"; 
+    document.getElementById("nummer2").innerHTML = "kiwi";
     document.getElementById("nummer3").innerHTML = "kers";
-    document.getElementById("nummer4").innerHTML = "-";
+    document.getElementById("nummer4").innerHTML = "banaan";
     textnormaal2();
+    //wanser=kers
   }
 
   if (quistion==8){
     textklijn2();
     txt="hoe veel spoken zitten er in pac man";
-    document.getElementById("nummer1").innerHTML = "-"; 
+    document.getElementById("nummer1").innerHTML = "1"; 
     document.getElementById("nummer2").innerHTML = "4";
-    document.getElementById("nummer3").innerHTML = "";
-    document.getElementById("nummer4").innerHTML = "-";
+    document.getElementById("nummer3").innerHTML = "3";
+    document.getElementById("nummer4").innerHTML = "2";
+    //wanser=4
   }
 
   if (quistion==9){
     txt="welk land is pac man gemaakt";
     document.getElementById("nummer1").innerHTML = "japan"; 
-    document.getElementById("nummer2").innerHTML = "";
-    document.getElementById("nummer3").innerHTML = "";
-    document.getElementById("nummer4").innerHTML = "-";
+    document.getElementById("nummer2").innerHTML = "china";
+    document.getElementById("nummer3").innerHTML = "VS";
+    document.getElementById("nummer4").innerHTML = "belgie";
     textnormaal2();
+    //wanser=japan
   }
 
   if (quistion==10){
     textklijn2();
     txt="hoe veel pac man games zijn er in totaal";
-    document.getElementById("nummer1").innerHTML = "-"; 
-    document.getElementById("nummer2").innerHTML = "-";
+    document.getElementById("nummer1").innerHTML = "10"; 
+    document.getElementById("nummer2").innerHTML = "2";
     document.getElementById("nummer3").innerHTML = "6";
-    document.getElementById("nummer4").innerHTML = "-";
+    document.getElementById("nummer4").innerHTML = "15";
+    //wanser=6
   }
 
   if (quistion==11){
