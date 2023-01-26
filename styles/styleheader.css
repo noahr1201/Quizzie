@@ -37,7 +37,7 @@
     transform: translate(-50%, -50%);
     position: absolute;
     font-family: arcade;
-    font-size: 300%;
+    font-size: 200%;
     color: #0f0;
     text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
     text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
@@ -51,7 +51,7 @@
     transform: translate(-50%, -50%);
     position: absolute;
     font-family: arcade;
-    font-size: 300%;
+    font-size: 200%;
     color: #0f0;
     text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
     text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
@@ -91,19 +91,19 @@
 @keyframes animate
 {
     0%{
-        font-size: 300%; 
+        font-size: 200%; 
     }
 
     50%{
-        font-size: 400%;
+        font-size: 300%;
     }
     100%{
-        font-size: 300%; 
+        font-size: 200%; 
     }
 }
 
 .header p:hover{
-    font-size: 400%;
+    font-size: 300%;
     animation: animate 1.5s linear infinite;
 }
 

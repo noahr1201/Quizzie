@@ -3,6 +3,7 @@ let txt = ''; /* The text */
 let speed = 90;
 let delay = 700; /* The speed/duration of the effect in milliseconds */
 let timeout;
+let timeout2;
 let quistion =0;
 let awnser = 0;
 let totaal = 0;
@@ -45,7 +46,7 @@ audio.play();
 }
 
 function writeagain2() {
-  timeout = setTimeout(writeagain, delay);
+  timeout2 = setTimeout(writeagain, delay);
 }
 
 function writeagain(){
@@ -85,7 +86,7 @@ function next(){
   }
 
   if (quistion==3){
-    txt="wat is de hoogste level in pac man";
+    txt="wat het wereld recoor in pac man";
     document.getElementById("nummer1").innerHTML = "-"; 
     document.getElementById("nummer2").innerHTML = "255";
     document.getElementById("nummer3").innerHTML = "";
@@ -93,7 +94,7 @@ function next(){
   }
   
   if (quistion==4){
-    txt="waar op werd de eerste geme uit gebracht";
+    txt="wat was de eerste game release";
     document.getElementById("nummer1").innerHTML = "-"; 
     document.getElementById("nummer2").innerHTML = "-";
     document.getElementById("nummer3").innerHTML = "";
@@ -101,6 +102,7 @@ function next(){
   }
 
   if (quistion==5){
+    textklijn2();
     txt="hoe veel afleveringen heeft de pac man serie";
     document.getElementById("nummer1").innerHTML = "52"; 
     document.getElementById("nummer2").innerHTML = "-";
@@ -122,10 +124,12 @@ function next(){
     document.getElementById("nummer2").innerHTML = "-";
     document.getElementById("nummer3").innerHTML = "kers";
     document.getElementById("nummer4").innerHTML = "-";
+    textnormaal2();
   }
 
   if (quistion==8){
-    txt="hoe veel spoken zitten in het spel";
+    textklijn2();
+    txt="hoe veel spoken zitten er in pac man";
     document.getElementById("nummer1").innerHTML = "-"; 
     document.getElementById("nummer2").innerHTML = "4";
     document.getElementById("nummer3").innerHTML = "";
@@ -138,9 +142,11 @@ function next(){
     document.getElementById("nummer2").innerHTML = "";
     document.getElementById("nummer3").innerHTML = "";
     document.getElementById("nummer4").innerHTML = "-";
+    textnormaal2();
   }
 
   if (quistion==10){
+    textklijn2();
     txt="hoe veel pac man games zijn er in totaal";
     document.getElementById("nummer1").innerHTML = "-"; 
     document.getElementById("nummer2").innerHTML = "-";
@@ -154,10 +160,11 @@ function next(){
     document.getElementById("nummer2").innerHTML = "info";
     document.getElementById("nummer3").innerHTML = "info";
     document.getElementById("nummer4").innerHTML = "info";
+    textnormaal2();
   }
 
   if (quistion==12){
-    document.getElementById("vraagtext").style.fontSize = "3vw";
+    textklijn2();
     txt="nu kan je lezen over de guiz en de maker";
     document.getElementById("nummer1").innerHTML = "next"; 
     document.getElementById("nummer2").innerHTML = "next";
@@ -166,7 +173,7 @@ function next(){
   }
 
   if (quistion==13){
-    document.getElementById("vraagtext").style.fontSize = "3vw";
+    
     txt="deze quiz is gemaakt door Dander Siegers uit klas D1B";
     document.getElementById("nummer1").innerHTML = "next"; 
     document.getElementById("nummer2").innerHTML = "next";
@@ -175,7 +182,7 @@ function next(){
   }
 
   if (quistion==14){
-    document.getElementById("vraagtext").style.fontSize = "3vw";
+    
     txt="de quiz ging over pacman. pacman is een oude game uit de jaren 80. In het spel moet je allen snoepjes eten terwijl je de spokjes moet ontwijken. ";
     document.getElementById("nummer1").innerHTML = "next"; 
     document.getElementById("nummer2").innerHTML = "next";
@@ -196,11 +203,19 @@ function next(){
 }
 
 function textnormaal2() {
-  timeout = setTimeout(textnormaal, delay);
+  timeout2 = setTimeout(textnormaal, delay);
 }
 
 function textnormaal(){
   document.getElementById("vraagtext").style.fontSize = "4vw";
+}
+
+function textklijn2(){
+  timeout2 = setTimeout(textklijn,delay)
+}
+
+function textklijn(){
+  document.getElementById("vraagtext").style.fontSize = "3vw";
 }
 
 
