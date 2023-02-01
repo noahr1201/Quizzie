@@ -91,11 +91,11 @@ section span:hover{
 @media screen and (max-width:900px){
 
     section{
-        height: 200vh;
+        height: 210vh;
     }
 
     body{
-        min-height: 200vh;
+        min-height: 210vh;
     }
    
     .container{
@@ -207,6 +207,31 @@ section span:hover{
 }
 
 
-
+.footer{
+    width: 63%;
+    height: 100px;
+    background: rgb(45, 62, 45);
+    border: #0f0 2px solid;
+    position: absolute;
+    z-index: 5;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    box-shadow: rgba(0, 255, 0, 0.494) 0px 0px 40px;
+}
+.footer p {
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: arcade;
+    font-size: 1.8vw;
+    color: #0f0;
+    text-shadow: rgba(0, 255, 0, 0.737) 2px 0px 10px;
+    text-shadow: 0 0 10em rgb(0, 255, 0), 0 0 0.5em rgb(0, 255, 0);
+    transition: font-size ease 0.2s ;
+    white-space: nowrap; 
+}
 
 

@@ -2,7 +2,7 @@ let i = 0;
 let txt = ''; /* The text */
 let speed = 90;
 let delay = 700;
-let delay2 = 1500; /* The speed/duration of the effect in milliseconds */
+let delay2 = 1000; /* The speed/duration of the effect in milliseconds */
 let timeout;
 let timeout2;
 let timeout3;
