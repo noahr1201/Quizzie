@@ -1,9 +1,11 @@
 let i = 0;
 let txt = ''; /* The text */
 let speed = 90;
-let delay = 700; /* The speed/duration of the effect in milliseconds */
+let delay = 700;
+let delay2 = 1500; /* The speed/duration of the effect in milliseconds */
 let timeout;
 let timeout2;
+let timeout3;
 let quistion =0;
 let awnser = 0;
 let totaal = 0;
@@ -239,55 +241,97 @@ function textklijn(){
 function correct1(){
   if (quistion==1&& awnser == 1){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==2&& awnser == 3){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==3&& awnser == 2){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==4&& awnser == 2){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==5&& awnser == 4){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==6&& awnser == 1){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==7&& awnser == 4){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==8&& awnser == 3){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==9&& awnser == 2){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==10&& awnser == 1){
     totaal++;
+    goed();
+    remove2()
     console.log(totaal);
     console.log("correct");
   }else if (quistion==11&& awnser == 3){
     totaal++;
+    goed();
+    remove2()
     console.log("correct");
     document.getElementById("textheader").innerHTML = "je hebt "+totaal+" punten"
   }else if (quistion==11){
     document.getElementById("textheader").innerHTML = "je hebt "+totaal+" punten"
   }else{
     console.log("incorrect");
+    fout()
+    remove2()
   }
   
 
+}
+
+function remove2() {
+  timeout3 = setTimeout(remove, delay2);
+}
+
+function goed(){
+  document.getElementById('body').classList.add("goed");
+  console.log("dit werkt")
+}
+
+function fout(){
+  document.getElementById('body').classList.add("fout");
+  console.log("dit werkt ook")
+}
+function remove(){
+  document.getElementById('body').classList.remove("fout");
+  document.getElementById('body').classList.remove("goed");
 }
 
 
