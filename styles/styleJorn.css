@@ -51,17 +51,17 @@ body{
     transform: scale(1.05);
   
 }
-.header p {
+.header a {
     text-align: center;
     margin-top: 60px;
     transform: translate(-0%, -50%);
-    position: relative;
+    position:absolute;
     font-family: arcade;
     font-size: 300%;
     color: #c20000;
     text-shadow: #660202 2px 0px 10px;
     text-shadow: 0 0 10em #660202, 0 0 0.5em #660202;
-    margin-right: 100px;
+    right: 585px;
 }
 
 @font-face {
@@ -97,16 +97,19 @@ button{
     border: #c20000 1px solid;
     border-radius: 50px;
 }
-a{
-    float: right;
-    transform: translate(-0%, -50%);
+a::after {
+    border-radius: 1em;
+    border-top: .1em solid #c20000;
+    content: "";
     position: absolute;
-    font-family: arcade;
-    font-size: 300%;
-    color: #c20000;
-    text-shadow: #660202 2px 0px 10px;
-    text-shadow: 0 0 10em #660202, 0 0 0.5em #660202;
-    margin-right: 100px;
-    right: 5px;
-    top: 55px;
-}
+      right: 100%;
+      bottom: .14em;
+      left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1);
+  }
+  a:hover::after {
+    right: 0;
+  }
+  a:link{
+    text-decoration: none;
+  }
